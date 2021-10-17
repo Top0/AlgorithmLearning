@@ -1,7 +1,9 @@
-package com.top0.sort;
+package com.top0.sort.归并排序;
 
 /**
- * 归并排序：递归+合并
+ * 归并排序：数组从中间拆分为两组，分别排好序后，合并这两个有序数组
+ * 递归+合并
+ * 时间复杂度：O(n*logn)
  */
 public class MergeSort {
     public static void main(String[] args) {
@@ -20,6 +22,7 @@ public class MergeSort {
         if (left == right) {
             return;
         }
+        // 不使用 (right+left)>>1 的原因是，防止越界！
         int mid = left + ((right - left) >> 1);
         process(array, left, mid);
         process(array, mid + 1, right);

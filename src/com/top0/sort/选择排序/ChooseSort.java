@@ -1,8 +1,8 @@
-package com.top0.sort;
+package com.top0.sort.选择排序;
 
 /**
  * 选择排序：不断的从剩余数组中选择最大或者最小的数，完成整个排序
- * 时间负责度：O(n^2)
+ * 时间复杂度：O(n^2)
  */
 public class ChooseSort {
     public static void main(String[] args) {
